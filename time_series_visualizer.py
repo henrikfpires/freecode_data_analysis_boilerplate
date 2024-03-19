@@ -20,15 +20,7 @@ df1 = df[(df['value'] >= lower_threshold) & (df['value'] <= upper_threshold)]
 
 def draw_line_plot(x):
     # Draw line plot
-    fig, ax = plt.subplots(figsize=(16, 9))
-    ax.set_title('Daily freeCodeCamp Forum Page Views 5/2016-12/2019')
-    ax.plot(x)
-    ax.set_xlabel('Date')
-    ax.set_ylabel('Page Views')
 
-    # Save image and return fig (don't change this part)
-    fig.savefig('line_plot.png')
-    return fig
 
 def draw_bar_plot():
     # Copy and modify data for monthly bar plot
